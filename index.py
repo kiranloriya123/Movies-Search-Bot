@@ -17,7 +17,7 @@ bot = Bot(TOKEN)
 def welcome(update, context) -> None:
     update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome To Shortner Fly Search Bot.\n"
                               f"🔥 Directly Search From The Bot.")
-                              f"HOW TO DOWNLOAD👉https://t.me/c/1501403185/110")
+                             
     update.message.reply_text("👇 Enter Any Movie or Series Name 👇")
 
 
