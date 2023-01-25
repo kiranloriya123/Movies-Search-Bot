@@ -11,7 +11,7 @@ api_key = "96a09f2f0a90da6f421518ff15b933dab0424169"
 def search_movies(query):
     movies_list = []
     movies_details = {}
-    website = BeautifulSoup(requests.get(f"https://10moviego.blogspot.com/?m=1/?s={query.replace(' ', '+')}").text, "html.parser")
+    website = BeautifulSoup(requests.get(f"https://10moviego.blogspot.com/?s={query.replace(' ', '+')}").text, "html.parser")
     movies = website.find_all("a", {'class': 'ml-mask jt'})
     for movie in movies:
         if movie:
